@@ -1,6 +1,8 @@
 # CS6120-Project
 ## Fake vs Real News Classification
 
+#### Github link: https://github.com/KrUciFieR-Jr/CS6120-Project
+
 #### Dropbox links: https://www.dropbox.com/scl/fo/i98fg57g6fos0bbst3dxc/h?dl=0&rlkey=bw38schri5f2uh41s77ruosja
 ### data folder contains two Excel files i.e tagged articles of Fake and Real News
 
