@@ -1,0 +1,60 @@
+========== 
+Gaussian Naive Bayes 
+True Negatives: 3841 False Positives: 827 False Negatives: 215 True Positives: 4101 Accuracy: 0.88 Precision: 0.83 Recall: 0.95 F1-Score: 0.89 
+========== 
+========== 
+Bernoulli Naive Bayes 
+True Negatives: 4388 False Positives: 280 False Negatives: 244 True Positives: 4072 Accuracy: 0.94 Precision: 0.94 Recall: 0.94 F1-Score: 0.94 
+========== 
+========== 
+Logistic Regression 
+True Negatives: 4392 False Positives: 276 False Negatives: 361 True Positives: 3955 Accuracy: 0.93 Precision: 0.93 Recall: 0.92 F1-Score: 0.93 
+========== 
+========== 
+Decision Tree 
+True Negatives: 4328 False Positives: 340 False Negatives: 513 True Positives: 3803 Accuracy: 0.91 Precision: 0.92 Recall: 0.88 F1-Score: 0.90 
+========== 
+========== 
+Random Forest 
+True Negatives: 4387 False Positives: 281 False Negatives: 337 True Positives: 3979 Accuracy: 0.93 Precision: 0.93 Recall: 0.92 F1-Score: 0.93 
+========== 
+========== 
+K-Nearest Neighbors 
+True Negatives: 4306 False Positives: 362 False Negatives: 2493 True Positives: 1823 Accuracy: 0.68 Precision: 0.83 Recall: 0.42 F1-Score: 0.56 
+==========
+
+LSTM
+141/141 [==============================] - 114s 805ms/step
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00      8984
+
+    accuracy                           1.00      8984
+   macro avg       1.00      1.00      1.00      8984
+weighted avg       1.00      1.00      1.00      8984
+
+
+Grid search output
+
+==========
+Logistic Regression
+True Negatives: 4413
+False Positives: 255
+False Negatives: 301
+True Positives: 4015
+Accuracy: 0.94
+Precision: 0.94
+Recall: 0.93
+F1-Score: 0.94
+==========
+==========
+Decision Tree
+True Negatives: 2748
+False Positives: 1920
+False Negatives: 119
+True Positives: 4197
+Accuracy: 0.77
+Precision: 0.69
+Recall: 0.97
+F1-Score: 0.80
+==========
