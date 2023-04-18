@@ -1,5 +1,3 @@
-import matplotlib.pyplot as plt
-import seaborn as sns
 import plotly.express as px
 import os
 from nltk.corpus import stopwords
@@ -11,7 +9,7 @@ stop_words.extend(['from', 'subject', 're', 'edu', 'use'])
 
 def create_visualizations(df):
     """
-    Function used to create visulaizations based on our data explorations
+    Function used to create visualizations based on our data explorations
 
     :param df: cleaned data frame
     :return: None

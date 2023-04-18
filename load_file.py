@@ -2,7 +2,7 @@ import pandas as pd
 
 def loading_data():
     """
-    This function would provide us with the loaded data from the csv file
+    This function would provide us with the loaded data from the excel file
 
     :return: Loaded Dataframe
     """

@@ -16,6 +16,13 @@ from config import config
 MODEL_PATH = config['MODEL_PATH']
 
 def scores(confusion_matrix,model_name):
+    """
+    This function is used to generate scores when confusion matrix is given
+
+    :param confusion_matrix: confusion matrix
+    :param model_name: The model name of which confusion matrix is generated
+    :return: None
+    """
     # extract the scores from the confusion matrix
     tn, fp, fn, tp = confusion_matrix.ravel()
     print("="*10)
@@ -41,8 +48,10 @@ def scores(confusion_matrix,model_name):
 
 def model(df):
     """
-
-    :param dataframe:
+    This function controls our modeling flow
+    we have 6 machine learning models along with couple of variants of LSTM to model our
+    inferences.
+    :param df: input dataframe
     :return:
     """
     if not os.path.exists(MODEL_PATH):

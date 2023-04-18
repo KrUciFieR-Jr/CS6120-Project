@@ -13,21 +13,23 @@ MODEL_PATH = config['MODEL_PATH']
 
 def lstm_model_without_dropout_architecture(train_texts,test_texts,train_labels,test_labels):
     """
+    This function uses LSTM from Keras with 128 units and dense sigmoid layer
 
-    :param train_text:
-    :param test_texts:
-    :param train_labeltokenizer.fit_on_texts(train_texts)
+    :param train_text: train_text data
+    :param test_texts:  test_text data
+    :param train_label: train_labels
+    :param test_labels: test_labels
+    :return: None
+    """
+    tokenizer = Tokenizer(num_words=5000)
+    tokenizer.fit_on_texts(train_texts)
     train_sequences = tokenizer.texts_to_sequences(train_texts)
     test_sequences = tokenizer.texts_to_sequences(test_texts)
 
     # Pad the sequences
     max_sequence_length = max(len(seq) for seq in train_sequences)
     train_data = pad_sequences(train_sequences, maxlen=max_sequence_length)
-    test_data = pad_sequences(test_sequences, maxlen=max_sequence_length)s:
-    :param test_labels:
-    :return:
-    """
-    tokenizer = Tokenizer(num_words=5000)
+    test_data = pad_sequences(test_sequences, maxlen=max_sequence_length)
 
     # Tokenize the text
     if MODEL_PATH != 'saved':
@@ -60,12 +62,13 @@ def lstm_model_without_dropout_architecture(train_texts,test_texts,train_labels,
 
 def lstm_model_with_dropout_architecture(train_texts,test_texts,train_labels,test_labels):
     """
+    This function uses LSTM from Keras with 256 units alongwith drop outs
 
-    :param train_text:
-    :param test_texts:
-    :param train_labels:
-    :param test_labels:
-    :return:
+    :param train_text: train_text data
+    :param test_texts:  test_text data
+    :param train_label: train_labels
+    :param test_labels: test_labels
+    :return: None
     """
     tokenizer = Tokenizer(num_words=5000)
     tokenizer.fit_on_texts(train_texts)

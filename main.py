@@ -6,6 +6,11 @@ import nltk
 nltk.download('stopwords')
 
 def main():
+    """
+    This main function controls the flow of the program
+
+    :return: None
+    """
     "Load the data from the csv files"
     loaded_dataframe = loading_data()
 

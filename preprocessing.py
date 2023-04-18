@@ -7,10 +7,11 @@ stop_words.extend(['from', 'subject', 're', 'edu', 'use'])
 
 def prerprocess_inline(text):
     """
-    Preprocessing function for text.
+    Preprocessing function for text. We remove hyperlinks, stopwords, punctuations, new lines
+    and make sure that the text is in lower case.
 
-    :param text:
-    :return:
+    :param text: The text data
+    :return: None
     """
     cleaned_data = []
 
@@ -30,7 +31,7 @@ def prerprocess_inline(text):
 
 def data_preprocessing(df):
     """
-
+    this function processes the title, as well as main article text.
     :param df: dataframe to clean
     :return: cleaned_dataframe
     """
